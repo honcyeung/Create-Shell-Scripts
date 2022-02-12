@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Enter the name of the script:"
+read name
+echo
+touch $name
+chmod a+x $name
+echo "#!/bin/bash" >> $name
+vim $name
