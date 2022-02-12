@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo how many files?
+read f
+echo start name?
+read name
+
+for i in $(seq 1 $f)
+do
+	n=$name.$i
+	touch $n
+	echo assigning permission to $n
+	chmod a+x $n
+	sleep 0.5
+done
